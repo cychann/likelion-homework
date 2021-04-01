@@ -1,0 +1,67 @@
+body {
+  background-color: aquamarine;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+.middle {
+  border-radius: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: antiquewhite;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.nav-item {
+  margin: 10px;
+  font-size: 25px;
+  color: dodgerblue;
+  background-color: azure;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.center {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: 40px;
+  color: cadetblue;
+}
+
+.card_box {
+  padding: 20px;
+  background-color: darksalmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 25px;
+  background-color: wheat;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.my_onepick {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 20px;
+}
