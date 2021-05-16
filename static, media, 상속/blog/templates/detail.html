@@ -1,0 +1,19 @@
+<h1>Blog Detail</h1>
+<br>
+<br>
+<h2>{{blog.title}}</h2>
+<hr>
+<p>{{blog.pub_date}}</p>
+<hr>
+<p>{{blog.body}}</p>
+<hr>
+
+{% if blog.image %}
+<p>
+    <img src="{{blog.image.url}}" alt="" width="100" height="100">
+</p>
+{% endif %}
+
+
+<a href="{% url 'edit' blog.id%}">수정하기</a>
+<a href="{% url 'delete' blog.id%}">삭제하기</a>

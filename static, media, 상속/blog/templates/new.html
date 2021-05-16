@@ -1,0 +1,21 @@
+<h1>Make new blog</h1>
+
+<form action="{%url 'create'%}" method="POST" enctype="multipart/form-data" novalidate>
+    {% csrf_token%}
+
+    <h3>
+        제목: 
+        <input type="text" name="title">
+    </h3>
+    <p>
+        내용:
+        <textarea name="body" id="" cols="30" rows="10">내용을 입력해주세요!</textarea>
+    </p>
+    <p>
+        사진 : <input type="file" name="image">
+    </p>
+
+    <button type="submit">작성!</button>
+    <!-- type을 submit으로 설정한 button을 form태그 안에 만들면
+    form태그 안에 정보가 action에 연결된 create함수로 넘어가게 됨-->
+</form>

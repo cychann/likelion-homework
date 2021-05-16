@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block container %}
+{% load static %}
+
+{% include "nav.html" %}
+
+<img src="{% static 'my_img.png'%}" alt="" width="100" height="100">
+<h1>Blog</h1>
+<a href="{%url 'new'%}">블로그 추가!</a>
+
+<div>
+    {% for blog in blogs %}
+        <hr>
+        <a href="{% url 'detail' blog.id%}">
+            <h2>{{blog.title}}</h2>
+        </a>
+        <p>{{blog.pub_date}}</p>
+        <p>{{blog.body}}</p>
+        {% if blog.image %}
+        <p>
+            <img src="{{blog.image.url}}" alt="" width="100" height="100">
+        </p>
+        {% endif %}
+       
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}
